@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to bottom right, #ffffff, #87cefa);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 1rem;
+        }
+
+        input {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 2px solid black;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        .dropdown-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+        }
+
+        .dropdown-container div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .dropdown-container select {
+            padding: 0.5rem;
+            border: 2px solid gray;
+            border-radius: 5px;
+        }
+
+        .arrow {
+            font-size: 24px;
+            align-self: center;
+        }
+
+        button {
+            background-color: #3b82f6;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #2563eb;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Currency Converter</h1>
+        <input type="number" value="1" class="amount">
+        <div class="dropdown-container">
+            <div>
+                <p>From</p>
+                <div class="dropdown">
+                    <img src="https://flagsapi.com/US/flat/64.png" class="flag" alt="From Currency">
+                    <select name="from" id="from"></select>
+                </div>
+            </div>
+            <div class="arrow">
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+            </div>
+            <div>
+                <p>To</p>
+                <div class="dropdown">
+                    <img src="https://flagsapi.com/IN/flat/64.png" class="flag" alt="To Currency">
+                    <select name="to" id="to"></select>
+                </div>
+            </div>
+        </div>
+        <p id="exchange-rate">1 USD = 83 INR</p>
+        <button id="convert-btn">Get Exchange Rate</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

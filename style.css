@@ -1,0 +1,120 @@
+/* Base Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.gradient-background {
+    background: linear-gradient(to bottom right, white, #60a5fa);
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container Styles */
+.converter-container {
+    background-color: white;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Title Styles */
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+/* Subtitle Styles */
+.subtitle {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+/* Input Styles */
+.amount-input {
+    width: 100%;
+    padding: 8px;
+    border: 2px solid black;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    text-align: center;
+    outline: none;
+}
+
+/* Currency Selection Styles */
+.currency-selection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.currency {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.currency-label {
+    margin-bottom: 8px;
+}
+
+.currency-dropdown {
+    display: flex;
+    align-items: center;
+}
+
+.currency-flag {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+}
+
+.dropdown {
+    padding: 8px;
+    border: 2px solid gray;
+    border-radius: 4px;
+    outline: none;
+}
+
+/* Arrow Icon Styles */
+.arrow-icon {
+    font-size: 24px;
+}
+
+/* Exchange Rate Styles */
+.exchange-rate {
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+/* Button Styles */
+.convert-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3b82f6;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.convert-button:hover {
+    background-color: #2563eb;
+}
